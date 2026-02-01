@@ -2,17 +2,35 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Todo from './todo'
+// import Todo from './todo'
+import Actor from './Actor'
+import Singer from './Singer'
 // import Time from './time'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
+  const actors =['Shakib','Jashim','Rubel','Shariful Raj'];
+  const singers =[
+    {name: 'Dr. Mahfuzur rahman',age: 68},
+    {name: 'Eva Rahman',age: 58},
+    {name: 'Salma',age: 48},
+    {name: 'Guru',age: 78},
 
+  ]
   return (
     <>
-
       <h1>Vite + React</h1>
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
+      {/* <Singer></Singer> */}
+
+    <Actor name ={'Bapparaj'}></Actor>
+    {
+        actors.map(actor => <Actor name={actor}></Actor>)
+    }
+
       {/* <Time
          tManagement="you are on time" isOn={true}>
       </Time>
@@ -22,7 +40,7 @@ function App() {
       <Time
          tManagement="Work Hard" isOn ={true}>
       </Time> */}
-      <Todo
+      {/* <Todo
         task='learn-react'
         isDone={true}>
       </Todo>
@@ -33,7 +51,7 @@ function App() {
       <Todo
         task='try-JSX'
         isDone={true}>
-      </Todo>
+      </Todo> */}
       {/* <Device name="Laptop" price ="55k"></Device>
     <Device name="Watch" price ="10k"></Device>
     <Device name="Mobile" price ="20k"></Device>
