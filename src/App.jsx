@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './todo'
-import Time from './time'
+// import Time from './time'
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <>
 
       <h1>Vite + React</h1>
-      <Time
+      {/* <Time
          tManagement="you are on time" isOn={true}>
       </Time>
       <Time
@@ -21,7 +21,7 @@ function App() {
       </Time>
       <Time
          tManagement="Work Hard" isOn ={true}>
-      </Time>
+      </Time> */}
       <Todo
         task='learn-react'
         isDone={true}>
